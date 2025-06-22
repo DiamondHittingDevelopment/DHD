@@ -195,14 +195,16 @@ ui <- fluidPage(
           ),
           
           plotlyOutput("biomech_regression")
-        )  # Closing mainPanel
-      )    # Closing sidebarLayout
-    )  
-    )# Closing fluidPage
+        tabPanel(
+          "Biomechanics Regressions",
+          …,
+          plotlyOutput("biomech_regression")
+        )     # close the last tabPanel
+      )       # close tabsetPanel
+    )         # close mainPanel
+  )           # close sidebarLayout
+)             # close fluidPage
 )
-    
-    
-    
     
     server <- function(input, output, session) {
       data <- reactiveVal()
