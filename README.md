@@ -195,11 +195,10 @@ ui <- fluidPage(
           ),
           
           plotlyOutput("biomech_regression")
-        )
-      ) # Closing tabsetPanel()
-    ) # Closing mainPanel
-  ) # Closing sidebarLayout
-) # Closing fluidPage()
+    )  # Closing mainPanel
+  )    # Closing sidebarLayout
+)      # Closing fluidPage
+
 
 
 
